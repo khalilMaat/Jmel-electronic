@@ -1,0 +1,74 @@
+/* CSS Slider */
+
+.slider{
+    height: 50vh;
+    margin: 2px 20px;
+    position: relative;
+}
+
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .9s;
+}
+
+.slider img.active{
+    opacity: 1;
+}
+
+.suivant, .precedent{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.4s ease;
+  
+}
+
+.btn .suivant:hover, .precedent:hover{
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.356);
+   
+}
+
+.suivant{
+    right: -1rem;
+}
+
+.precedent{
+    left: -1rem;
+}
+
+
+.btn button{
+    border: none;
+    background-color: transparent;
+
+}
+
+.suivant i, .precedent i{
+    padding: 4px 0px;
+}
+
+/*Responseve*/
+
+@media only screen and (max-width: 991px) {
+    .slider{
+        height: 30vh;
+    }
+
+}
+
+
+
+
+
+
